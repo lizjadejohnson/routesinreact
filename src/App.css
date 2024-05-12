@@ -1,0 +1,76 @@
+#root {
+  width: 100%;  /* Ensuring root takes full width */
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+.MainContent {
+  flex-grow: 1; /* Allows this element to grow and fill available space */
+  overflow-y: auto; /* Adds vertical scrolling if content is taller than the space */
+  padding-top: 30px; /* Adjust based on the height of your navbar */
+  padding-bottom: 30px; /* Adjust based on the height of your footer */
+  box-sizing: border-box; /* Includes padding in the calculation of height */
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.nav, .footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+  color: salmon;
+  padding: 5px;
+  border: solid salmon 5px;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+
+
+.nav a, .footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.navTab, .footTab{
+  font-size:18px;
+  border-width:.2px;
+  border-radius:12px;
+  padding-left:8px;
+  padding-right:8px;
+}
+.navTab:hover, .footTab:hover{
+  color:green;
+  font-size:18px;
+  border-width:.2px;
+  border-radius:12px;
+  padding-left:8px;
+  padding-right:8px;
+}
+
+.skillsList {
+  list-style-position: inside; /* Brings the bullet points inside the content flow */
+  text-align: center; /* Centers the text and the bullets */
+  padding: 0; /* Removes default padding */
+  margin: 0 auto; /* Centers the list in its parent container */
+  width: 50%; /* Adjust this as needed to fit your design */
+}
